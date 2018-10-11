@@ -1,0 +1,18 @@
+<div class='news'>
+  <h3>Recent Highlights</h3>
+  <div class='news_table'>
+  <table>
+    <tbody>
+      {% for news in site.data.news %}
+      <tr>
+        <td class="news_date">{{news.date}}</td>
+        <td class="news_title">
+          <a class='highlight-link' href={{news.url}}>{{news.name}}</a>
+          {{news.description}}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+</div>
